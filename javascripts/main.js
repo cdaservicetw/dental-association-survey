@@ -1,22 +1,3 @@
-let navigation = $('#h-move');
-
-$(window).scroll(function () {
-    if (window.matchMedia('(max-width: 767px)').matches) {
-        if ($(window).scrollTop() > 360) {
-            navigation.addClass('sticky');
-        } else {
-            navigation.removeClass('sticky');
-        }
-    }
-    else {
-        if ($(window).scrollTop() > 420) {
-            navigation.addClass('sticky');
-        } else {
-            navigation.removeClass('sticky');
-        }
-    }
-});
-
 function checkForm() {
     let is_name, is_email, is_msg = false;
     let name = document.getElementById('userName').value;

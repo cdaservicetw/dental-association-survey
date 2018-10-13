@@ -116,17 +116,6 @@ input::placeholder, textarea::placeholder {
     background: var(--white-color);
     position: relative;
 }
-.header-move {
-    background-color:  var(--white-color);
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    z-index: -1;
-}
-.header-move > div > img {
-    max-height: 35px;
-}
 
 .header, .h-cover {
     width: 100%;
@@ -160,18 +149,6 @@ input::placeholder, textarea::placeholder {
 .h-cover .h-cover-left {
     border-right-color: transparent;
     left: 0;
-}
-.h-logo {
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    max-height: 60px;
-    padding: 25px 0;
-    z-index: 200;
-}
-.h-logo > div > img {
-    max-height: 35px;
 }
 .h-title-wrap {
     top: 50%;
@@ -418,6 +395,9 @@ input::placeholder, textarea::placeholder {
     .header , .h-cover {
         height: calc(100vh - 180px);
         max-height: 480px
+    }
+    .h-title h1 {
+        font-size: 2.6rem;
     }
     .h-cover .h-cover-right, .h-cover .h-cover-left {
         bottom: -0.5px;
