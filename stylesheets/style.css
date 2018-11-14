@@ -25,6 +25,7 @@ body {
     line-height: 1;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 img {
@@ -208,7 +209,7 @@ input::placeholder, textarea::placeholder {
 .m-write-btn {
     text-align: center;
 }
-.m-write-btn > a {
+.m-write-btn > a, .m-write-btn > button {
     display: inline-block;
     text-decoration: none;
     background-color: var(--bright-blue);
@@ -229,6 +230,18 @@ input::placeholder, textarea::placeholder {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+[data-qa="popup-close-button"] {
+    right: -6px !important;
+}
+[data-qa="close-button-mobile"] {
+    width: 30px !important;
+    height: 30px !important;
+    right: 20px !important;
+}
+[data-qa="iframe"] {
+    padding-top: 30px;
 }
 
 .contactUs-container {
