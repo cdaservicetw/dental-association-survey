@@ -206,6 +206,7 @@ input::placeholder, textarea::placeholder {
 .t-right {
     text-align: right;
 }
+
 .m-write-btn {
     text-align: center;
 }
@@ -273,6 +274,12 @@ input::placeholder, textarea::placeholder {
     font-size: 2rem;
     font-weight: initial;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .text-wrap > p {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 1023px) {
